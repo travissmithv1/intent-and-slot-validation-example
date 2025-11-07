@@ -1,0 +1,62 @@
+{
+  "intent_tests": [
+    {
+      "query": "I want to book a flight",
+      "expected_intent": "book_flight"
+    },
+    {
+      "query": "Cancel my reservation",
+      "expected_intent": "cancel_booking"
+    },
+    {
+      "query": "I need to change my flight dates",
+      "expected_intent": "modify_booking"
+    },
+    {
+      "query": "What's the status of my booking?",
+      "expected_intent": "check_status"
+    },
+    {
+      "query": "What's the weather in Paris?",
+      "expected_intent": "off_topic"
+    },
+    {
+      "query": "Tell me a joke",
+      "expected_intent": "off_topic"
+    }
+  ],
+  "slot_tests": [
+    {
+      "query": "fly from Boston to NYC on 2025-12-15 for 2 passengers",
+      "expected_slots": {
+        "departure_city": "Boston",
+        "arrival_city": "New York",
+        "departure_date": "2025-12-15",
+        "passengers": 2
+      }
+    },
+    {
+      "query": "I need business class",
+      "expected_slots": {
+        "class": "business"
+      }
+    },
+    {
+      "query": "from LA to Miami, 3 people, economy class",
+      "expected_slots": {
+        "departure_city": "Los Angeles",
+        "arrival_city": "Miami",
+        "passengers": 3,
+        "class": "economy"
+      }
+    },
+    {
+      "query": "Chicago to Seattle on January 5th",
+      "expected_slots": {
+        "departure_city": "Chicago",
+        "arrival_city": "Seattle",
+        "departure_date": "2026-01-05"
+      }
+    }
+  ]
+}
