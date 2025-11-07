@@ -4,7 +4,7 @@ AI-powered flight booking assistant demonstrating Intent and Slot Validation pri
 
 ## Overview
 
-This project showcases how to build a production-ready chatbot that:
+This project showcases how to build a chatbot that:
 - Extracts structured booking data from conversational input
 - Validates intents and slots with type safety
 - Manages multi-turn conversations with slot filling
