@@ -11,6 +11,8 @@
     "test:slots": "tsx scripts/test-slots.ts",
     "demo": "tsx scripts/demo-conversation.ts",
     "lint": "eslint src/ tests/",
+    "type-check": "tsc --noEmit",
+    "check": "npm run type-check && npm run lint && npm test",
     "build": "tsc"
   },
   "keywords": [
